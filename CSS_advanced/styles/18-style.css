@@ -216,7 +216,6 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-/* Task 17: Adding padding to sections */
 
 :root {
   --section-padding: 5rem 0;
@@ -227,38 +226,35 @@ html {
   --footer-padding: 5rem 0 1rem;
 }
 
-/* Section overall padding */
 .section {
   padding: var(--section-padding);
 }
 
-/* Section header padding */
 .section-header {
   padding: var(--section-header-padding);
 }
 
-/* Section body padding */
 .section-body {
   padding: var(--section-body-padding);
 }
 
-/* Section footer padding and alignment */
 .section-footer {
   padding: var(--section-footer-padding);
   text-align: var(--section-footer-align);
 }
 
-/* Footer padding */
-footer {
+.footer {
   padding: var(--footer-padding);
 }
-/* Reached Task 18 */
+
+
+/* Task 18: Customizing the navbar */
 
 :root {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 0.4rem; /* 4% of root element (1rem = 10px) */
+  --nav-item-letter-spacing: 0.4rem; /* 4% of root element */
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0; /* bottom 3rem, others 0 */
   --nav-item-link-hover: var(--color-primary);
@@ -275,7 +271,7 @@ nav {
   text-align: center;
 }
 
-.nav .nav-item {
+nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -284,12 +280,54 @@ nav {
   margin: var(--nav-item-margin);
 }
 
-.nav .nav-link {
+nav .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; /* half root top/bottom, 1rem left/right */
 }
 
-.nav .nav-link:hover {
+nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+}
+
+
+/* Task 18: Customizing the navbar */
+
+:root {
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.4rem; /* 4% of root element */
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0; /* bottom 3rem, others 0 */
+  --nav-item-link-hover: var(--color-primary);
+}
+
+.navbar-menu {
+  float: right;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+}
+
+nav .nav-link {
+  display: block;
+  padding: 0.5rem 1rem; /* half root top/bottom, 1rem left/right */
+}
+
+nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
 
