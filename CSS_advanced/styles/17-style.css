@@ -216,7 +216,7 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-/* Task 17: Adding padding to sections */
+/* Reached Task 17 */
 
 :root {
   --section-padding: 5rem 0;
@@ -227,28 +227,24 @@ html {
   --footer-padding: 5rem 0 1rem;
 }
 
-/* Section overall padding */
 .section {
   padding: var(--section-padding);
 }
 
-/* Section header padding */
 .section-header {
   padding: var(--section-header-padding);
 }
 
-/* Section body padding */
 .section-body {
   padding: var(--section-body-padding);
 }
 
-/* Section footer padding and alignment */
 .section-footer {
   padding: var(--section-footer-padding);
   text-align: var(--section-footer-align);
 }
 
-/* Footer padding */
+/* Footer element */
 footer {
   padding: var(--footer-padding);
 }
