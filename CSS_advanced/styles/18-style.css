@@ -258,18 +258,21 @@ html {
   --nav-item-link-hover: var(--color-primary);
 }
 
+/* Navbar menu floated right */
 .navbar-menu {
   float: right;
 }
 
-nav {
+/* Nav container styling */
+.nav {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
-nav .nav-item {
+/* Nav items */
+.nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -278,12 +281,13 @@ nav .nav-item {
   margin: var(--nav-item-margin);
 }
 
-nav .nav-link {
+/* Nav links */
+.nav .nav-link {
   display: block;
-  padding: 0.5rem 1rem; /* half root top/bottom, full root left/right */
+  padding: 0.5rem 1rem; /* top/bottom half root, left/right full root */
 }
 
-nav .nav-link:hover {
+/* Nav links hover */
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
-
