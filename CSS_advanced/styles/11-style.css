@@ -56,16 +56,28 @@ a {
 .card-category {
   color: var(--color-primary);
 }
-/* Task 10: Section padding */
+/* 10-style.css */
 
-.section {
-  padding: 5rem 0;
+/* Custom property for section header alignment */
+:root {
+  --section-header-align: center;
 }
-/* Task 11: Container */
 
-.container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+/* Section header class */
+.section-header {
+  text-align: var(--section-header-align);
+}
+/* 11-style.css */
+
+/* Custom property for text transform */
+:root {
+  --section-tagline-transform: uppercase;
+}
+
+/* Section tagline class */
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
 }
 
