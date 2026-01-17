@@ -335,6 +335,6 @@ ul.row {
 }
 
 /* Footer unordered lists */
-footer ul {
+.footer ul {
   text-align: right;
 }
