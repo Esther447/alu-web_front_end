@@ -252,11 +252,12 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 0.4rem; /* 4% of root element */
+  --nav-item-letter-spacing: 0.04rem; /* 4% of root element */
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0; /* bottom 3rem, others 0 */
   --nav-item-link-hover: var(--color-primary);
 }
+
 
 /* Navbar menu floated right */
 .navbar-menu {
