@@ -56,9 +56,15 @@ a {
 .card-category {
   color: var(--color-primary);
 }
-/* Task 10: Section padding */
+/* 10-style.css */
 
-.section {
-  padding: 5rem 0;
+/* Custom property for section header alignment */
+:root {
+  --section-header-align: center;
+}
+
+/* Section header class */
+.section-header {
+  text-align: var(--section-header-align);
 }
 
