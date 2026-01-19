@@ -339,20 +339,4 @@ der {
   --button-hover-text-decoration: none;
   --button-hover-background: var(--color-primary);
 }
-/* Task 30: Card testimonials */
-.card-testimonial {
-  text-align: center;
-}
-
-.card-testimonial .card-avatar {
-  border-radius: 50%;
-  width: calc(10 * 1rem);
-  height: calc(10 * 1rem);
-}
-
-.card-testimonial cite {
-  display: block;
-  padding-top: 1rem;
-  color: var(--color-primary);
-}
 
