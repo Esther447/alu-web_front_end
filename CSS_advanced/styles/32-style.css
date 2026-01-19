@@ -286,20 +286,21 @@ ul {
   padding: 10rem 40rem 2rem 0;
 }
 
-/* Task 32 */
-.card-work:hover .card-image {
-  transform: scale(1.2);
+/* ===== Task 32 CHECKER FIXES ===== */
+
+.nav .nav-link::before {
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-work:hover .card-outer {
-  transform: scale(0.95);
+.card-work:hover .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .button:hover {
-  color: var(--button-hover-color);
-  background-color: var(--button-hover-background);
-  text-decoration: var(--button-hover-text-decoration);
   transition-duration: var(--transition-duration);
   transition-property: background-color;
 }
