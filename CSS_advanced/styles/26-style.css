@@ -293,10 +293,20 @@ der {
 .card-work:hover .card-title {
   opacity: 1;
 }
-/* Task 26: Dark theme sections */
-[data-section-theme="dark"] {
-  --text-color: var(--color-white);
-  --section-title-color: var(--color-white);
-  background: var(--color-black);
+/* Task 26: Add border radius to images */
+
+.card-testimonial {
+  text-align: center;
 }
 
+.card-testimonial .card-avatar {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-primary);
+}

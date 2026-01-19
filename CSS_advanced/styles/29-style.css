@@ -327,16 +327,22 @@ der {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-/* Task 29: Button border */
+/* Task 29: Styling and custom properties for the nav */
+
 :root {
-  --button-display: inline-block;
-  --button-padding: 1.5rem 3rem;
-  --button-border: 0.2rem solid var(--color-primary);
-  --button-color: var(--color-black);
-  --button-text-decoration: none;
-  --button-font-size: var(--font-size-large);
-  --button-hover-color: var(--color-white);
-  --button-hover-text-decoration: none;
-  --button-hover-background: var(--color-primary);
+  --nav-item-link-hover: var(--color-white);
+}
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 0.2rem;
+}
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
 }
 

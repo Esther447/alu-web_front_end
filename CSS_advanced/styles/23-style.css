@@ -212,19 +212,17 @@ der {
   top: -1rem;
   left: 0;
 }
-/* Task 23: Header & Logo */
-.header {
-  padding: 4rem 0 0;
+/* Task 23: Fix issues for dark theme */
+
+.footer-address {
+  color: var(--text-color);
 }
 
-.header-logo {
-  position: relative;
+.social-link {
+  display: block;
 }
 
-.header-logo a {
-  display: inline-block;
-  position: absolute;
-  top: -1rem;
-  left: 0;
+.social-link > svg {
+  fill: var(--text-color);
 }
 
