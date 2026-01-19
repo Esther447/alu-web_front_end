@@ -311,20 +311,28 @@ der {
 .social-link svg {
   fill: var(--text-color);
 }
-/* Task 28: Card Services extra styling */
-.card-services .card-title {
-  margin: 0;
+/* Task 28: Fixing the header and menu navigation bar */
+
+:root {
+  --header-padding: 4rem 0 0;
+  --header-logo-position: relative;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
+  --header-logo-link-top: -1rem;
+  --header-logo-link-left: 0;
 }
 
-.card-services a {
-  display: block;
-  padding: calc(2 * 1rem);
-  background-color: var(--color-light-grey);
-  text-decoration: none;
+.header {
+  padding: var(--header-padding);
 }
 
-.card-services a:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+.header-logo {
+  position: var(--header-logo-position);
 }
 
+.header-logo a {
+  display: var(--header-logo-link-display);
+  position: var(--header-logo-link-position);
+  top: var(--header-logo-link-top);
+  left: var(--header-logo-link-left);
+}
