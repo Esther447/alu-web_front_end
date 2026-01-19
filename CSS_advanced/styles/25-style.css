@@ -1,4 +1,6 @@
+/* ========================= */
 /* Task 9: Remove link decoration */
+/* ========================= */
 
 :root {
   --color-primary: #d73953;
@@ -23,6 +25,19 @@
   --line-height-small: 1.2;
   --line-height-base: 1.5;
   --line-height-big: 1.8;
+
+  /* ========================= */
+  /* Task 25: Button variables */
+  /* ========================= */
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: 0.2rem solid var(--color-primary);
+  --button-color: var(--color-black);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
 }
 
 html {
@@ -48,249 +63,33 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  display: none;
+a:active {
+  background-color: var(--color-light-grey);
 }
 
-.section-tagline,
-.card-category {
-  color: var(--color-primary);
-}
-/* Task 10: Section padding */
-
-.section {
-  padding: 5rem 0;
-}
-/* Task 11: Container */
-
-.container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* Task 12: Section headers */
-
-.section-header {
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-.section-title {
-  font-size: var(--font-size-xx-large);
-  margin-bottom: 1.5rem;
-}
-
-.section-tagline {
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-}
-/* Task 13: Section body */
-
-.section-body {
-  margin-top: 5rem;
-}
-/* Task 14: Cards */
-
-.card {
-  background-color: var(--color-white);
-  padding: 2rem;
-}
-
-.card-title {
-  font-size: var(--font-size-large);
-  margin-bottom: 1rem;
-}
-
-.card-category {
-  font-size: var(--font-size-small);
-  text-transform: uppercase;
-}
-/* Task 15: Grid */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-/* Task 16: Lists */
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-/* Task 17: Navigation */
-
-.nav {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-link {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-small);
-  text-transform: uppercase;
-}
-/* Task 18: Buttons */
+/* ========================= */
+/* Task 25: Button styling */
+/* ========================= */
 
 .button {
-  display: inline-block;
-  padding: 1.5rem 3rem;
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
 }
 
-.button-primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-/* Task 19: Footer */
-.footer {
-  background-color: var(--color-dark-grey);
-  color: var(--color-white);
-  padding: 5rem 0 1rem;
-  text-align: center;
+.button:hover {
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background: var(--button-hover-background);
 }
 
-.footer a {
-  color: var(--color-white);
-  text-decoration: none;
-}
-/* Task 20: Card Services hover */
-.card-services a {
-  display: block;
-  padding: calc(2 * 1rem);
-  background-color: var(--color-light-grey);
-  text-decoration: none;
-  color: var(--text-color);
-  transition: all 0.3s ease;
-}
+/* ========================= */
+/* Dark theme override */
+/* ========================= */
 
-.card-services a:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+[data-section-theme="dark"] {
+  --button-color: var(--color-white);
 }
-/* Task 22: Hero section */
-.section-hero {
-  background-size: 90rem auto;
-}
-
-.section-hero .section-title {
-  margin-bottom: 5rem;
-}
-
-.section-hero .section-inner {
-  padding: 10rem 40rem 2rem 0;
-}
-/* Task 22: Hero section */
-.section-hero {
-  background-size: 90rem auto;
-}
-
-.section-hero .section-title {
-  margin-bottom: 5rem;
-}
-
-.section-hero .section-inner {
-  padding: 10rem 40rem 2rem 0;
-}
-der {
-  padding: 4rem 0 0;
-}
-
-.header-logo {
-  position: relative;
-}
-
-.header-logo a {
-  display: inline-block;
-  position: absolute;
-  top: -1rem;
-  left: 0;
-}
-/* Task 23: Header & Logo */
-.header {
-  padding: 4rem 0 0;
-}
-
-.header-logo {
-  position: relative;
-}
-
-.header-logo a {
-  display: inline-block;
-  position: absolute;
-  top: -1rem;
-  left: 0;
-}
-/* Task 24: Nav pseudo */
-.nav-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 20%;
-  background-color: var(--color-white);
-}
-
-.nav-link:hover::before {
-  width: 100%;
-  background-color: var(--color-primary);
-}
-/* Task 25: Works section */
-.card-outer {
-  position: relative;
-  overflow: hidden;
-}
-
-.card-work .card-image img {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-  vertical-align: bottom;
-}
-
-.card-inner {
-  position: absolute;
-  top: -0.1rem;
-  left: -0.1rem;
-  right: -0.1rem;
-  z-index: 1;
-}
-
-.card-work:hover .card-inner {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.card-work .card-title {
-  text-align: center;
-  margin: 0;
-  opacity: 0;
-  height: 100%;
-  position: relative;
-}
-
-.card-work .card-title a {
-  display: block;
-  text-decoration: none;
-  padding-top: 45%;
-}
-
-.card-work .card-title a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.card-work:hover .card-title {
-  opacity: 1;
-}
-
