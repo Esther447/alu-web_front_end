@@ -227,19 +227,24 @@ der {
   top: -1rem;
   left: 0;
 }
-/* Task 24: Nav pseudo */
-.nav-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 20%;
-  background-color: var(--color-white);
+/* Task 24: Add background and hover state to services */
+
+/* Card title inside services */
+.card-services .card-title {
+  margin: 0;
 }
 
-.nav-link:hover::before {
-  width: 100%;
+/* Links inside services */
+.card-services a {
+  display: block;
+  padding: calc(2 * 1rem);
+  background-color: var(--color-light-grey);
+  text-decoration: none;
+}
+
+/* Hover state for service links */
+.card-services a:hover {
+  color: var(--color-white);
   background-color: var(--color-primary);
+  text-decoration: none;
 }
-
