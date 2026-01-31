@@ -423,16 +423,17 @@
 
   /* Section SERVICES ============================= */
 .section-services .row {
-  display: flex;           /* enable flexbox */
-  flex-wrap: wrap;         /* allow wrapping to multiple lines */
-  justify-content: center; /* center the cards horizontally */
-  gap: 20px;               /* optional: space between cards */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Section ABOUT US ============================= */
 .section-about-us [class^="col-"] {
   align-self: center;
 }
+
 
 /*** 4. CARD ***/
 
