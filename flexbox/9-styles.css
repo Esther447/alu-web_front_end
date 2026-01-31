@@ -421,8 +421,8 @@
   font-weight: bold;
 }
 
-  /* Section SERVICES
-      ============================= */
+  /* Section SERVICES ============================= */
+
   /* Section CARDS ALIGNMENT ============================= */
   .section-services .row {
     .section-services .row {
@@ -432,12 +432,11 @@
   gap: 20px;           /* optional: space between cards */
   }
  }
-  /* Section ABOUT US
-      ============================= */
+  /* Section ABOUT US ============================= */
   
-  .section-about-us [class*='col-'] {
-    align-self: center;
-  }
+  .section-about-us [class^="col-"] {
+  align-self: center;
+}
   
   /*** 4. CARD ***/
   
