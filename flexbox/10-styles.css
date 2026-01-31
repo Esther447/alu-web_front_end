@@ -388,12 +388,23 @@
     position: relative;
     margin-top: -8.5rem;
   }
+
+  .section-hero.hero-homepage {
+  /* copy all previous declarations from .section-hero here */
+}
   
   .hero-homepage {
     background-image: url(images/banner-home.jpg);
     background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
+
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .section-hero .section-body {
