@@ -419,7 +419,7 @@
   text-decoration: none;
   color: #333;
   font-weight: bold;
-}
+  }
 
   /* Section SERVICES ============================= */
 .section-services .row {
@@ -432,6 +432,7 @@
 .section-about-us [class^="col-"] {
   align-self: center;
 }
+
 
 
 /*** 4. CARD ***/
