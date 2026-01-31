@@ -394,12 +394,14 @@
     justify-content: center;
     min-height: 50vh;
   }
-  /* Section Latest news
+   /* Section Latest news
       ============================= */
-  
+
   .section-latest-news .row {
     flex-direction: row-reverse;
-  }
+}
+
+/*** 4. CARD ***/
   
   /* Section SERVICES
       ============================= */
@@ -622,6 +624,10 @@
     flex-direction: column;
   }
   
+git add 2-styles.css 2-index.html
+git commit -m "Reverse latest news cards order using flexbox"
+git add 2-styles.css 2-index.html
+git commit -m "Reverse latest news cards order using flexbox"
   .post-meta-list strong {
     color: var(--color-primary);
     font-size: 1.3rem;
