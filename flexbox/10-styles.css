@@ -383,38 +383,36 @@
   
   /* Section HERO
       ============================= */
-  
-  .section-hero {
-    position: relative;
-    margin-top: -8.5rem;
-  }
-
-  .section-hero.hero-homepage {
-  /* copy all previous declarations from .section-hero here */
+/* Section HERO section */
+.section-hero {
+  position: relative;
+  margin-top: -8.5rem;
 }
-  
-  .hero-homepage {
-    background-image: url(images/banner-home.jpg);
-    background-position: 75% 0;
-    background-repeat: no-repeat;
-    background-size: 90rem auto;
 
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .section-hero .section-body {
-    padding: 10rem 4rem;
-  }
-  
-  .section-hero .section-category {
-    color: var(--color-white);
-    text-transform: uppercase;
-  }
+.section-hero.hero-homepage {
+  /* Required background rules */
+  background-color: var(--color-primary);  /* ✅ must exist */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Other styles copied from .section-hero */
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-hero .section-body {
+  padding: 10rem 4rem;
+}
+
+.section-hero .section-category {
+  color: var(--color-white);
+  text-transform: uppercase;
+}
   
   .section-hero .section-title {
     margin-bottom: 5rem;
