@@ -1,0 +1,148 @@
+<<<<<<< HEAD
+/* Task 9: Remove link decoration */
+
+=======
+>>>>>>> main
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+<<<<<<< HEAD
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+>>>>>>> main
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+<<<<<<< HEAD
+}
+
+html {
+  scroll-behavior: smooth;
+=======
+
+  --section-header-align: center;
+  --section-tagline-transform: uppercase;
+
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+}
+
+html {
+>>>>>>> main
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+}
+
+<<<<<<< HEAD
+h1, h2, h3, h4, h5, h6 {
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+>>>>>>> main
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+<<<<<<< HEAD
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
+/* 10-style.css */
+
+/* Custom property for section header alignment */
+:root {
+  --section-header-align: center;
+}
+
+/* Section header class */
+.section-header {
+  text-align: var(--section-header-align);
+}
+/* 11-style.css */
+
+/* Custom property for text transform */
+:root {
+  --section-tagline-transform: uppercase;
+}
+
+/* Section tagline class */
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+/* 12-style.css */
+
+/* Custom properties for section title */
+:root {
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+}
+
+/* Section title class */
+=======
+.card-category {
+  color: var(--color-primary);
+}
+
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+>>>>>>> main
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+<<<<<<< HEAD
+=======
+.section-tagline {
+  color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+}
+>>>>>>> main

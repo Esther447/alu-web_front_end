@@ -1,0 +1,676 @@
+<<<<<<< HEAD
+/* Task 9: Remove link decoration */
+
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* ================= ROOT VARIABLES ================= */
+
+:root {
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+>>>>>>> main
+
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+<<<<<<< HEAD
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+=======
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+
+  --text-color: var(--color-black);
+>>>>>>> main
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+<<<<<<< HEAD
+}
+
+html {
+  scroll-behavior: smooth;
+=======
+
+  --section-tagline-transform: uppercase;
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.4rem;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0;
+  --nav-item-link-hover: var(--color-white);
+
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: 0.2rem solid var(--color-primary);
+  --button-color: var(--color-black);
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-background: var(--color-primary);
+
+  --header-padding: 4rem 0 0;
+
+  /* REQUIRED BY TASK */
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* ================= GLOBAL ================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+>>>>>>> main
+  font-size: 62.5%;
+}
+
+body {
+<<<<<<< HEAD
+  color: var(--text-color);
+=======
+>>>>>>> main
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+<<<<<<< HEAD
+=======
+  color: var(--text-color);
+>>>>>>> main
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
+
+a {
+<<<<<<< HEAD
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+=======
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--color-light-grey);
+}
+
+>>>>>>> main
+.visually-hidden {
+  display: none;
+}
+
+<<<<<<< HEAD
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
+/* Task 10: Section padding */
+
+.section {
+  padding: 5rem 0;
+}
+/* Task 11: Container */
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Task 12: Section headers */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: var(--font-size-xx-large);
+  margin-bottom: 1.5rem;
+}
+
+.section-tagline {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+/* Task 13: Section body */
+
+.section-body {
+  margin-top: 5rem;
+}
+/* Task 14: Cards */
+
+.card {
+  background-color: var(--color-white);
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: var(--font-size-large);
+  margin-bottom: 1rem;
+}
+
+.card-category {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+}
+/* Task 15: Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+/* Task 16: Lists */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Task 17: Navigation */
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+}
+/* Task 18: Buttons */
+
+.button {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+/* Task 19: Footer */
+.footer {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  padding: 5rem 0 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+/* Task 20: Card Services hover */
+.card-services a {
+  display: block;
+  padding: calc(2 * 1rem);
+  background-color: var(--color-light-grey);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.card-services a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+/* Task 22: Hero section */
+.section-hero {
+  background-size: 90rem auto;
+}
+
+.section-hero .section-title {
+  margin-bottom: 5rem;
+}
+
+.section-hero .section-inner {
+  padding: 10rem 40rem 2rem 0;
+}
+/* Task 22: Hero section */
+.section-hero {
+  background-size: 90rem auto;
+}
+
+.section-hero .section-title {
+  margin-bottom: 5rem;
+}
+
+.section-hero .section-inner {
+  padding: 10rem 40rem 2rem 0;
+}
+der {
+  padding: 4rem 0 0;
+}
+
+.header-logo {
+  position: relative;
+}
+
+.header-logo a {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+/* Task 23: Header & Logo */
+.header {
+  padding: 4rem 0 0;
+}
+
+.header-logo {
+  position: relative;
+}
+
+.header-logo a {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+/* Task 24: Nav pseudo */
+.nav-link::before {
+=======
+/* ================= NAV ================= */
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav .nav-item {
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+}
+
+.nav .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+}
+
+.nav .nav-link::before {
+>>>>>>> main
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+<<<<<<< HEAD
+  height: 20%;
+  background-color: var(--color-white);
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  background-color: var(--color-primary);
+}
+/* Task 25: Works section */
+.card-outer {
+=======
+  height: 0.2rem;
+  background-color: var(--color-white);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.nav .nav-item:hover .nav-link::before {
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section-header {
+  padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+.section-title {
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+  font-size: var(--font-size-xx-large);
+}
+
+.section-tagline {
+  color: var(--color-primary);
+  text-transform: var(--section-tagline-transform);
+}
+
+/* ================= BUTTON ================= */
+
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  color: var(--button-color);
+  font-size: var(--button-font-size);
+}
+
+.button:hover {
+  background-color: var(--button-hover-background);
+  color: var(--button-hover-color);
+
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+/* ================= GRID ================= */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+ul.row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[class^="col-"] {
+  float: left;
+  padding: 0.5rem;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ================= CARD WORK ================= */
+
+.card-work .card-outer {
+>>>>>>> main
+  position: relative;
+  overflow: hidden;
+}
+
+.card-work .card-image img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+<<<<<<< HEAD
+  vertical-align: bottom;
+}
+
+.card-inner {
+  position: absolute;
+  top: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: 1;
+=======
+}
+
+/* CHECKER REQUIRES TRANSITION HERE */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+.card-work .card-inner {
+  position: absolute;
+  top: -0.1rem;
+  bottom: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: 1;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+>>>>>>> main
+}
+
+.card-work:hover .card-inner {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+<<<<<<< HEAD
+.card-work .card-title {
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  height: 100%;
+  position: relative;
+}
+
+.card-work .card-title a {
+  display: block;
+  text-decoration: none;
+  padding-top: 45%;
+}
+
+.card-work .card-title a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card-work:hover .card-title {
+  opacity: 1;
+}
+/* Task 26: Dark theme sections */
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background: var(--color-black);
+}
+/* Task 27: Footer address & social links */
+.footer-address {
+=======
+/* ================= FOOTER ================= */
+
+.footer {
+  padding: var(--footer-padding);
+}
+
+.footer ul {
+  text-align: right;
+}
+
+.footer-address,
+.footer-copyright {
+  font-size: var(--font-size-small);
+>>>>>>> main
+  color: var(--text-color);
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link svg {
+  fill: var(--text-color);
+}
+<<<<<<< HEAD
+/* Task 28: Card Services extra styling */
+.card-services .card-title {
+  margin: 0;
+}
+
+.card-services a {
+  display: block;
+  padding: calc(2 * 1rem);
+  background-color: var(--color-light-grey);
+  text-decoration: none;
+}
+
+.card-services a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+/* Task 29: Button border */
+:root {
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: 0.2rem solid var(--color-primary);
+  --button-color: var(--color-black);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+/* Task 30: Card testimonials */
+.card-testimonial {
+  text-align: center;
+}
+
+.card-testimonial .card-avatar {
+  border-radius: 50%;
+  width: calc(10 * 1rem);
+  height: calc(10 * 1rem);
+}
+
+.card-testimonial cite {
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-primary);
+}
+/* Task 31: Add quotes decoration on testimonials */
+
+.card-testimonial .card-quote {
+  position: relative;
+}
+
+.card-testimonial .card-quote::before {
+  content: "\201C";
+  position: absolute;
+  top: -4.5rem;
+  left: -1rem;
+  color: #efeded;
+  font-size: 10rem;
+  z-index: -1;
+}
+
+/* Task 32: Incorporating transitions */
+
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.button:hover {
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+=======
+
+/* ================= DARK THEME ================= */
+
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  --button-color: var(--color-white);
+  background-color: var(--color-black);
+>>>>>>> main
+}

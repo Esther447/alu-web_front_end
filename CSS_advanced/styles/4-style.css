@@ -1,0 +1,64 @@
+<<<<<<< HEAD
+/* Task 4: Font family variables */
+
+=======
+>>>>>>> main
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+<<<<<<< HEAD
+html {
+  scroll-behavior: smooth;
+}
+
+=======
+>>>>>>> main
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+}
+
+<<<<<<< HEAD
+h1, h2, h3, h4, h5, h6 {
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+>>>>>>> main
+  font-family: var(--font-family-title);
+}
+
+a {
+  color: var(--text-color);
+}
+
+.visually-hidden {
+  display: none;
+}
+
+<<<<<<< HEAD
+.section-tagline,
+=======
+>>>>>>> main
+.card-category {
+  color: var(--color-primary);
+}
+
+<<<<<<< HEAD
+=======
+.section-tagline {
+  color: var(--color-primary);
+}
+>>>>>>> main

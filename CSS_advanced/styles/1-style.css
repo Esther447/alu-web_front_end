@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+/* Smooth scrolling for entire page */
+=======
+>>>>>>> main
+html {
+  scroll-behavior: smooth;
+}

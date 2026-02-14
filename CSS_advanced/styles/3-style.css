@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+/* Task 3: CSS variables */
+
+=======
+>>>>>>> main
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+<<<<<<< HEAD
+body,
+=======
+body {
+  color: var(--text-color);
+}
+
+>>>>>>> main
+a {
+  color: var(--text-color);
+}
+
+<<<<<<< HEAD
+.section-tagline,
+=======
+.visually-hidden {
+  display: none;
+}
+
+>>>>>>> main
+.card-category {
+  color: var(--color-primary);
+}
+
+<<<<<<< HEAD
+=======
+.section-tagline {
+  color: var(--color-primary);
+}
+>>>>>>> main

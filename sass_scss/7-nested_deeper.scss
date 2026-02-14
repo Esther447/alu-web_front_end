@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+/* Nested font sizes */
+body {
+  font-size: 14px;
+
+  h1 {
+    font-size: 16px;
+
+    &.smaller {
+      font-size: 12px;
+    }
+  }
+}
+
+=======
+body {
+    font-size: 14px;
+
+    h1 {
+        font-size: 16px;
+
+        &.smaller {
+            font-size: 12px;
+        }
+    }
+}
+>>>>>>> main

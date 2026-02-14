@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+/* Create headers with font-size equal to their number */
+@for $i from 1 through 5 {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+=======
+@for $i from 1 through 5 {
+    h#{$i} {
+        font-size: $i + px;
+    }
+}
+>>>>>>> main
